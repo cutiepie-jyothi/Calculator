@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--Device viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Title of web-->
+    <title>Calculator</title>
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/d87b21cf08.js" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--Typed Js-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!--Web Logo-->
+    <link rel="icon" href="https://ik.imagekit.io/oeyoakvay/hat.png?updatedAt=1690109886770" type="image/x-icon">
+    <linK rel="stylesheet" href="Calculator.css">
+</head>
+
+<body>
+    <!--Main Container-->
+    <div class="Calculator d-flex  justify-content-center flex-column">
+        <!--Title-->
+        <h1> Calculator </h1>
+        <div class="mainContainer shadow-lg" id="mainContainer">
+            <!--Dark and Light Modes-->
+            <div class="bgMode d-flex flex-row justify-content-end mb-3">
+                <button id="lightMode">
+                    <i class="fa-solid fa-sun" title="light-mode"></i>
+                </button>
+                <button id="darkMode" class="">
+                    <i class="fa-solid fa-moon" title="dark-mode"></i>
+                </button>
+            </div>
+            <!--Dark and light-mode End-->
+            <!--Input and result-->
+            <input type="text" id="Inputvalue">
+            <!--Buttons-->
+            <div class="buttonContainer">
+                <button value="AC" onclick="ClearAll()">AC</button>
+
+                <button value="%" onclick="Solve('%')">%</button>
+                <button value="DEL" onclick="Delete('DEL')">DEL</button>
+                <button value="/" onclick="Solve('/')" class="special">/</button>
+
+                <button value="7" onclick="Solve('7')">7</button>
+                <button value="8" onclick="Solve('8')">8</button>
+                <button value="9" onclick="Solve('9')">9</button>
+                <button value="*" onclick="Solve('*')" class="special">*</button>
+
+                <button value="4" onclick="Solve('4')">4</button>
+                <button value="5" onclick="Solve('5')">5</button>
+                <button value="6" onclick="Solve('6')">6</button>
+                <button value="-" onclick="Solve('-')" class="special">-</button>
+
+                <button value="1" onclick="Solve('1')">1</button>
+                <button value="2" onclick="Solve('2')">2</button>
+                <button value="3" onclick="Solve('3')">3</button>
+                <button value="+" onclick="Solve('+')" class="special">+</button>
+
+                <button value="0" onclick="Solve('0')">0</button>
+                <button value="00" onclick="Solve('00')">00</button>
+                <button value="." onclick="Solve('.')">.</button>
+                <button value="=" id="output" class="special">=</button>
+
+            </div>
+            <!--Buttons End-->
+        </div>
+    </div>
+<script type="text/javascript" src="Calculator.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    margin: 0;
+}
+
+/*Main Title */
+h1 {
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+/* Icon Modes Light and Dark */
+.bgMode button {
+    border: 1px solid black;
+    border-radius: 50%;
+
+}
+
+.buttonColor {
+    color: red;
+}
+
+#lightMode {
+    display: none;
+}
+
+/*main Container*/
+.Calculator {
+    height: 100vh;
+    align-items: center;
+}
+
+.mainContainer {
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px 20px 20px;
+    border: 1px solid black;
+
+}
+
+/*Input of the Calculator */
+input {
+    height: 50px;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    background-color: white !important;
+    color: black;
+}
+
+/* special color for the [ "/" and "*" and "-" and "+"  and "=" ] */
+.special {
+    background-color: #f0b732 !important;
+    font-size: 32px;
+    color: white;
+}
+
+/*buttonContainer */
+.buttonContainer {
+    border: none;
+    font-size: 24px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* buttons pf the button container */
+.buttonContainer button {
+    border-radius: 4vw;
+    border: none;
+    background-color: #d7dbd8;
+}
